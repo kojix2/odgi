@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install required packages
-        run: brew update && brew install open-mpi
+        run: brew update && brew install cmake
       - name: Init and update submodules
         run: git submodule update --init --recursive
       - name: Build odgi
