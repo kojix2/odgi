@@ -689,7 +689,7 @@ set(odgi_INCLUDES
   "${mio_INCLUDE}")
 
 set(odgi_LIBS
-  jemalloc
+  "-L${JEMALLOC_LIBRARY}"
   ${SDSLLITE_LINK_LIBRARIES}
   ${LIBDIVSUFSORT_LINK_LIBRARIES}
   "-L${CMAKE_SOURCE_DIR}/lib"
