@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install required packages
-        run: brew update && brew install cmake llvm jemalloc
+        run: brew update && brew install cmake llvm jemalloc libomp
       - name: Init and update submodules
         run: git submodule update --init --recursive
       - name: Build odgi
